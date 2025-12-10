@@ -1,0 +1,40 @@
+{
+  "name": "Coin Flip - Flip a Coin Online",
+  "short_name": "Coin Flip",
+  "description": "Simple and fun coin flip app with beautiful animations. Keep track of your heads and tails streaks!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#667eea",
+  "theme_color": "#4A90E2",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["entertainment", "utilities"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Flip Coin",
+      "short_name": "Flip",
+      "description": "Quickly flip a coin",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/icon-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
