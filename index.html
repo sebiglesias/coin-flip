@@ -22,6 +22,9 @@
     <meta property="twitter:description" content="Simple and fun coin flip app with beautiful animations. Keep track of your heads and tails streaks!">
     <meta property="twitter:image" content="https://sebiglesias.com.ar/coin-flip/icon-512x512.png">
     
+    <!-- Google AdSense -->
+    <meta name="google-adsense-account" content="ca-pub-3381238987477190">
+    
     <!-- PWA Manifest -->
     <link rel="manifest" href="./manifest.json">
     
@@ -33,16 +36,20 @@
     <title>Coin Flip - Flip a Coin Online</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebApplication">
     <div class="container">
         <header>
-            <h1>Coin Flip</h1>
-            <p class="subtitle">Click the coin to flip!</p>
+            <h1 itemprop="name">Coin Flip</h1>
+            <p class="subtitle" itemprop="description">Click the coin to flip!</p>
         </header>
         
         <main>
+            <link itemprop="url" href="https://sebiglesias.com.ar/coin-flip/">
+            <meta itemprop="applicationCategory" content="GameApplication">
+            <meta itemprop="operatingSystem" content="All">
+            <meta itemprop="author" content="Sebastian Iglesias">
             <div class="coin-container">
-                <div id="coin" class="coin">
+                <div id="coin" class="coin" role="button" tabindex="0" aria-label="Click to flip the coin">
                     <div class="coin-face heads">
                         <div class="coin-inner">H</div>
                     </div>
@@ -52,18 +59,18 @@
                 </div>
             </div>
             
-            <div id="result" class="result"></div>
+            <div id="result" class="result" role="status" aria-live="polite"></div>
             
-            <div class="counters">
-                <div class="counter heads-counter">
+            <section class="counters" aria-label="Streak counters">
+                <article class="counter heads-counter">
                     <h2>Heads Streak</h2>
-                    <div id="headsCounter" class="counter-value">0</div>
-                </div>
-                <div class="counter tails-counter">
+                    <div id="headsCounter" class="counter-value" aria-live="polite">0</div>
+                </article>
+                <article class="counter tails-counter">
                     <h2>Tails Streak</h2>
-                    <div id="tailsCounter" class="counter-value">0</div>
-                </div>
-            </div>
+                    <div id="tailsCounter" class="counter-value" aria-live="polite">0</div>
+                </article>
+            </section>
         </main>
         
         <footer>
@@ -72,5 +79,10 @@
     </div>
     
     <script src="./app.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381238987477190"
+            crossorigin="anonymous"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 </body>
 </html>

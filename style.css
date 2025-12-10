@@ -284,3 +284,11 @@ footer {
 .install-button.show {
     display: block;
 }
+
+/* Google Ads Container */
+.ads-container {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 728px;
+    text-align: center;
+}
