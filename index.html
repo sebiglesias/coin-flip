@@ -37,16 +37,17 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body itemscope itemtype="https://schema.org/WebApplication">
-    <meta itemprop="url" content="https://sebiglesias.com.ar/coin-flip/">
-    <meta itemprop="applicationCategory" content="GameApplication">
-    <meta itemprop="operatingSystem" content="All">
     <div class="container">
         <header>
             <h1 itemprop="name">Coin Flip</h1>
             <p class="subtitle" itemprop="description">Click the coin to flip!</p>
         </header>
         
-        <main itemprop="applicationSubCategory" content="Coin Flip Simulator">
+        <main>
+            <link itemprop="url" href="https://sebiglesias.com.ar/coin-flip/">
+            <meta itemprop="applicationCategory" content="GameApplication">
+            <meta itemprop="operatingSystem" content="All">
+            <meta itemprop="author" content="Sebastian Iglesias">
             <div class="coin-container">
                 <div id="coin" class="coin" role="button" tabindex="0" aria-label="Click to flip the coin">
                     <div class="coin-face heads">
@@ -74,7 +75,6 @@
         
         <footer>
             <p>Your streaks are saved automatically</p>
-            <meta itemprop="author" content="Sebastian Iglesias">
         </footer>
     </div>
     
