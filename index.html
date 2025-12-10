@@ -36,16 +36,19 @@
     <title>Coin Flip - Flip a Coin Online</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebApplication">
+    <meta itemprop="url" content="https://sebiglesias.com.ar/coin-flip/">
+    <meta itemprop="applicationCategory" content="GameApplication">
+    <meta itemprop="operatingSystem" content="All">
     <div class="container">
         <header>
-            <h1>Coin Flip</h1>
-            <p class="subtitle">Click the coin to flip!</p>
+            <h1 itemprop="name">Coin Flip</h1>
+            <p class="subtitle" itemprop="description">Click the coin to flip!</p>
         </header>
         
-        <main>
+        <main itemprop="applicationSubCategory" content="Coin Flip Simulator">
             <div class="coin-container">
-                <div id="coin" class="coin">
+                <div id="coin" class="coin" role="button" tabindex="0" aria-label="Click to flip the coin">
                     <div class="coin-face heads">
                         <div class="coin-inner">H</div>
                     </div>
@@ -55,22 +58,23 @@
                 </div>
             </div>
             
-            <div id="result" class="result"></div>
+            <div id="result" class="result" role="status" aria-live="polite"></div>
             
-            <div class="counters">
-                <div class="counter heads-counter">
+            <section class="counters" aria-label="Streak counters">
+                <article class="counter heads-counter">
                     <h2>Heads Streak</h2>
-                    <div id="headsCounter" class="counter-value">0</div>
-                </div>
-                <div class="counter tails-counter">
+                    <div id="headsCounter" class="counter-value" aria-live="polite">0</div>
+                </article>
+                <article class="counter tails-counter">
                     <h2>Tails Streak</h2>
-                    <div id="tailsCounter" class="counter-value">0</div>
-                </div>
-            </div>
+                    <div id="tailsCounter" class="counter-value" aria-live="polite">0</div>
+                </article>
+            </section>
         </main>
         
         <footer>
             <p>Your streaks are saved automatically</p>
+            <meta itemprop="author" content="Sebastian Iglesias">
         </footer>
     </div>
     
