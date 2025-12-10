@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple and fun coin flip app with beautiful animations. Keep track of your heads and tails streaks!">
+    <meta name="keywords" content="coin flip, flip a coin, heads or tails, random coin toss">
+    <meta name="author" content="Coin Flip App">
+    <meta name="theme-color" content="#4A90E2">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sebiglesias.github.io/coin-flip/">
+    <meta property="og:title" content="Coin Flip - Flip a Coin Online">
+    <meta property="og:description" content="Simple and fun coin flip app with beautiful animations. Keep track of your heads and tails streaks!">
+    <meta property="og:image" content="/icon-512x512.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sebiglesias.github.io/coin-flip/">
+    <meta property="twitter:title" content="Coin Flip - Flip a Coin Online">
+    <meta property="twitter:description" content="Simple and fun coin flip app with beautiful animations. Keep track of your heads and tails streaks!">
+    <meta property="twitter:image" content="/icon-512x512.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512x512.png">
+    <link rel="apple-touch-icon" href="/icon-192x192.png">
+    
+    <title>Coin Flip - Flip a Coin Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Coin Flip</h1>
+            <p class="subtitle">Click the coin to flip!</p>
+        </header>
+        
+        <main>
+            <div class="coin-container">
+                <div id="coin" class="coin">
+                    <div class="coin-face heads">
+                        <div class="coin-inner">H</div>
+                    </div>
+                    <div class="coin-face tails">
+                        <div class="coin-inner">T</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="result" class="result"></div>
+            
+            <div class="counters">
+                <div class="counter heads-counter">
+                    <h2>Heads Streak</h2>
+                    <div id="headsCounter" class="counter-value">0</div>
+                </div>
+                <div class="counter tails-counter">
+                    <h2>Tails Streak</h2>
+                    <div id="tailsCounter" class="counter-value">0</div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Your streaks are saved automatically</p>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
