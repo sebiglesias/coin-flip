@@ -100,7 +100,7 @@ header h1 {
     transform: rotateY(180deg);
 }
 
-/* Flip animations */
+/* Flip animations - 1800deg = 5 full rotations ending on heads, 1980deg = 5.5 rotations ending on tails */
 @keyframes flipHeads {
     0% {
         transform: rotateY(0deg);
