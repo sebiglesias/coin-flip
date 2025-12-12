@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://sebiglesias.com.ar/coin-flip/sitemap.xml
