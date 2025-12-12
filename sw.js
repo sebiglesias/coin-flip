@@ -1,4 +1,4 @@
-const CACHE_NAME = 'coin-flip-v1';
+const CACHE_NAME = 'coin-flip-v2';
 const urlsToCache = [
   './',
   './index.html',
@@ -6,7 +6,9 @@ const urlsToCache = [
   './app.js',
   './manifest.json',
   './icon-192x192.png',
-  './icon-512x512.png'
+  './icon-512x512.png',
+  './robots.txt',
+  './sitemap.xml'
 ];
 
 // Install event - cache resources
