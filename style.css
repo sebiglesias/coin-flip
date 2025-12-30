@@ -19,16 +19,24 @@ body {
     background: var(--bg-gradient);
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     color: var(--text-color);
-    padding: 20px;
 }
 
 .container {
     max-width: 600px;
     width: 100%;
     text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+body > .container:first-of-type {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header h1 {
@@ -291,4 +299,79 @@ footer {
     width: 100%;
     max-width: 728px;
     text-align: center;
+}
+
+/* Info Section Styles */
+.info-section {
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    padding: 60px 20px;
+    margin-top: 60px;
+}
+
+.info-section .container {
+    max-width: 800px;
+    text-align: left;
+}
+
+.info-section h2 {
+    color: #667eea;
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.info-section h2:first-of-type {
+    margin-top: 0;
+}
+
+.info-section h3 {
+    color: #764ba2;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.info-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.info-section ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.info-section li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.info-section strong {
+    color: #667eea;
+}
+
+/* Responsive adjustments for info section */
+@media (max-width: 600px) {
+    .info-section {
+        padding: 40px 15px;
+    }
+    
+    .info-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .info-section h3 {
+        font-size: 1.2rem;
+    }
+    
+    .info-section p,
+    .info-section li {
+        font-size: 1rem;
+    }
 }

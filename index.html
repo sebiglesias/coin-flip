@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow">
+    <!-- TODO: Replace placeholder with actual Google Search Console verification token -->
+    <meta name="google-site-verification" content="verification_token_placeholder">
     <meta name="description" content="Simple and fun coin flip app with beautiful animations. Keep track of your heads and tails streaks!">
     <meta name="keywords" content="coin flip, flip a coin, heads or tails, random coin toss">
     <meta name="author" content="Coin Flip App">
@@ -70,6 +72,25 @@
       "inLanguage": "en"
     }
     </script>
+    
+    <!-- BreadcrumbList Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://sebiglesias.com.ar/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Coin Flip",
+        "item": "https://sebiglesias.com.ar/coin-flip/"
+      }]
+    }
+    </script>
 </head>
 <body itemscope itemtype="https://schema.org/WebApplication">
     <div class="container">
@@ -112,6 +133,62 @@
             <p>Your streaks are saved automatically</p>
         </footer>
     </div>
+    
+    <section class="info-section" itemscope itemtype="https://schema.org/FAQPage">
+        <div class="container">
+            <h2>About Coin Flip Online</h2>
+            <p>Welcome to the best online coin flip tool! Our free coin flipper helps you make quick decisions with a virtual coin toss. Whether you need to settle a debate, make a random choice, or just have fun, our coin flip app provides an easy and entertaining way to flip a coin online.</p>
+            
+            <h2>How to Use the Coin Flipper</h2>
+            <p>Using our online coin flip tool is incredibly simple. Just click on the coin or press the spacebar or Enter key to flip it. The coin will perform a realistic 3D flip animation and land on either heads or tails. Each flip is completely random and fair, giving you a 50/50 chance for heads or tails.</p>
+            <p>The app also tracks your flip streaks. When you get consecutive heads, your heads streak counter increases. If you flip tails, the heads streak resets and the tails streak starts counting. This makes it fun to see how lucky you can get!</p>
+            
+            <h2>Frequently Asked Questions</h2>
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Is the coin flip truly random?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">Yes! Our coin flip uses JavaScript's built-in random number generator to ensure each flip is completely random and unbiased. Every flip has a true 50% chance of landing on heads or tails.</p>
+                </div>
+            </div>
+            
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Can I use this coin flip app offline?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">Absolutely! This is a Progressive Web App (PWA), which means you can install it on your device and use it even without an internet connection. Just click the install button in your browser.</p>
+                </div>
+            </div>
+            
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Are my flip streaks saved?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">Yes, your heads and tails streaks are automatically saved in your browser's local storage. Even if you close the app or refresh the page, your streaks will be preserved.</p>
+                </div>
+            </div>
+            
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Why should I use an online coin flip instead of a real coin?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">An online coin flip is convenient because you always have it with you on your phone or computer. There's no need to search for a physical coin, and the result is guaranteed to be fair and random. Plus, our app tracks your streaks and provides beautiful animations!</p>
+                </div>
+            </div>
+            
+            <h2>When to Use a Coin Flip</h2>
+            <p>A coin toss is perfect for many situations: making quick decisions between two options, settling friendly disputes, choosing who goes first in a game, deciding what to eat for dinner, or determining random outcomes in games and activities. The simplicity of heads or tails makes it universally understood and accepted as a fair way to make choices.</p>
+            
+            <h2>Features of Our Coin Flip App</h2>
+            <ul>
+                <li><strong>Realistic 3D Animation:</strong> Watch the coin flip with smooth, realistic animations</li>
+                <li><strong>Streak Tracking:</strong> Keep track of consecutive heads or tails flips</li>
+                <li><strong>Mobile Friendly:</strong> Works perfectly on smartphones, tablets, and computers</li>
+                <li><strong>No Registration:</strong> Start flipping immediately, no sign-up required</li>
+                <li><strong>Free Forever:</strong> Completely free to use with no hidden costs</li>
+                <li><strong>Fast Loading:</strong> Lightweight design loads instantly</li>
+                <li><strong>Offline Support:</strong> Install as a PWA and use without internet</li>
+            </ul>
+            
+            <p>Start flipping coins now and let chance decide! Whether you call it heads or tails, our coin flip app makes decision-making fun and fair.</p>
+        </div>
+    </section>
     
     <script src="./app.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381238987477190"
