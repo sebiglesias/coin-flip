@@ -7,23 +7,23 @@
     <meta name="googlebot" content="index, follow">
     <!-- TODO: Replace placeholder with actual Google Search Console verification token -->
     <meta name="google-site-verification" content="verification_token_placeholder">
-    <meta name="description" content="Simple and fun coin flip app with beautiful animations. Keep track of your heads and tails streaks!">
-    <meta name="keywords" content="coin flip, flip a coin, heads or tails, random coin toss">
-    <meta name="author" content="Coin Flip App">
+    <meta name="description" content="Flip a coin online instantly — free virtual coin toss with 3D animations. Heads or tails? Perfect for games, decisions & settling debates. Works offline.">
+    <meta name="keywords" content="coin flip, flip a coin, heads or tails, random coin toss, virtual coin toss, online coin flip, coin flip simulator">
+    <meta name="author" content="Sebastian Iglesias">
     <meta name="theme-color" content="#4A90E2">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sebiglesias.com.ar/coin-flip/">
     <meta property="og:title" content="Coin Flip - Flip a Coin Online">
-    <meta property="og:description" content="Simple and fun coin flip app with beautiful animations. Keep track of your heads and tails streaks!">
+    <meta property="og:description" content="Flip a coin online instantly — free virtual coin toss with 3D animations. Heads or tails? Perfect for games, decisions & settling debates. Works offline.">
     <meta property="og:image" content="https://sebiglesias.com.ar/coin-flip/icon-512x512.png">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://sebiglesias.com.ar/coin-flip/">
     <meta property="twitter:title" content="Coin Flip - Flip a Coin Online">
-    <meta property="twitter:description" content="Simple and fun coin flip app with beautiful animations. Keep track of your heads and tails streaks!">
+    <meta property="twitter:description" content="Flip a coin online instantly — free virtual coin toss with 3D animations. Heads or tails? Perfect for games, decisions & settling debates. Works offline.">
     <meta property="twitter:image" content="https://sebiglesias.com.ar/coin-flip/icon-512x512.png">
     
     <!-- Google AdSense -->
@@ -88,6 +88,78 @@
         "position": 2,
         "name": "Coin Flip",
         "item": "https://sebiglesias.com.ar/coin-flip/"
+      }]
+    }
+    </script>
+
+    <!-- FAQPage Structured Data for Rich Results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Is the coin flip truly random?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Our coin flip uses JavaScript's built-in random number generator to ensure each flip is completely random and unbiased. Every flip has a true 50% chance of landing on heads or tails."
+        }
+      },{
+        "@type": "Question",
+        "name": "Can I use this coin flip app offline?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! This is a Progressive Web App (PWA), which means you can install it on your device and use it even without an internet connection. Just click the install button in your browser."
+        }
+      },{
+        "@type": "Question",
+        "name": "Are my flip streaks saved?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, your heads and tails streaks are automatically saved in your browser's local storage. Even if you close the app or refresh the page, your streaks will be preserved."
+        }
+      },{
+        "@type": "Question",
+        "name": "Why should I use an online coin flip instead of a real coin?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An online coin flip is convenient because you always have it with you on your phone or computer. There's no need to search for a physical coin, and the result is guaranteed to be fair and random. Plus, our app tracks your streaks and provides beautiful animations!"
+        }
+      },{
+        "@type": "Question",
+        "name": "Can I flip a coin multiple times in a row?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! You can flip the coin as many times as you want. Each flip is independent and has a 50/50 chance of heads or tails. The app automatically tracks your consecutive streaks, making it easy to see how many times you get the same result in a row."
+        }
+      },{
+        "@type": "Question",
+        "name": "What is a coin flip simulator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A coin flip simulator is a digital tool that mimics the randomness of a physical coin toss. Our simulator uses advanced random algorithms to ensure fairness, and it provides realistic 3D animations that make the experience engaging and fun, just like flipping a real coin."
+        }
+      },{
+        "@type": "Question",
+        "name": "What are the odds of getting 5 heads in a row?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The probability of getting 5 consecutive heads is 1 in 32 (or 3.125%). Since each coin flip is independent, the odds of getting heads remain 50% regardless of previous results. This phenomenon is known as the 'gambler's fallacy' — past results don't influence future flips."
+        }
+      },{
+        "@type": "Question",
+        "name": "Can I use this coin flip app for games?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! Our coin flip app is perfect for games and sports. Use it to decide who goes first in a board game, determine teams, settle friendly disputes, or make random choices in video games. It's a fair and quick way to make decisions."
+        }
+      },{
+        "@type": "Question",
+        "name": "How do I use coin flip to decide who goes first?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Using our coin flip app to decide who goes first is simple: have one person choose heads and the other choose tails. Flip the coin, and whoever's choice matches the result gets to go first. It's a fair and universally accepted way to make this decision."
+        }
       }]
     }
     </script>
@@ -171,7 +243,42 @@
                     <p itemprop="text">An online coin flip is convenient because you always have it with you on your phone or computer. There's no need to search for a physical coin, and the result is guaranteed to be fair and random. Plus, our app tracks your streaks and provides beautiful animations!</p>
                 </div>
             </div>
-            
+
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Can I flip a coin multiple times in a row?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">Yes! You can flip the coin as many times as you want. Each flip is independent and has a 50/50 chance of heads or tails. The app automatically tracks your consecutive streaks, making it easy to see how many times you get the same result in a row.</p>
+                </div>
+            </div>
+
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">What is a coin flip simulator?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">A coin flip simulator is a digital tool that mimics the randomness of a physical coin toss. Our simulator uses advanced random algorithms to ensure fairness, and it provides realistic 3D animations that make the experience engaging and fun, just like flipping a real coin.</p>
+                </div>
+            </div>
+
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">What are the odds of getting 5 heads in a row?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">The probability of getting 5 consecutive heads is 1 in 32 (or 3.125%). Since each coin flip is independent, the odds of getting heads remain 50% regardless of previous results. This phenomenon is known as the 'gambler's fallacy' — past results don't influence future flips.</p>
+                </div>
+            </div>
+
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Can I use this coin flip app for games?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">Absolutely! Our coin flip app is perfect for games and sports. Use it to decide who goes first in a board game, determine teams, settle friendly disputes, or make random choices in video games. It's a fair and quick way to make decisions.</p>
+                </div>
+            </div>
+
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">How do I use coin flip to decide who goes first?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">Using our coin flip app to decide who goes first is simple: have one person choose heads and the other choose tails. Flip the coin, and whoever's choice matches the result gets to go first. It's a fair and universally accepted way to make this decision.</p>
+                </div>
+            </div>
+
             <h2>When to Use a Coin Flip</h2>
             <p>A coin toss is perfect for many situations: making quick decisions between two options, settling friendly disputes, choosing who goes first in a game, deciding what to eat for dinner, or determining random outcomes in games and activities. The simplicity of heads or tails makes it universally understood and accepted as a fair way to make choices.</p>
             
@@ -187,14 +294,36 @@
             </ul>
             
             <p>Start flipping coins now and let chance decide! Whether you call it heads or tails, our coin flip app makes decision-making fun and fair.</p>
+
+            <h2>Coin Flip Statistics & Probability</h2>
+            <p>Understanding the mathematics behind coin flips can make the experience even more enjoyable. Here's a deeper look at the probability and statistics involved:</p>
+
+            <h3>The Law of Large Numbers</h3>
+            <p>One of the most fascinating aspects of coin flipping is the Law of Large Numbers. While each individual flip has a 50/50 chance, the more times you flip, the closer your results will approach a perfect 50/50 split. For example, in 10 flips you might get 6 heads and 4 tails, but in 1,000 flips, you'll get much closer to 500 heads and 500 tails. This principle demonstrates why our randomization algorithm is fair and unbiased.</p>
+
+            <h3>Consecutive Streaks Probability</h3>
+            <p>Many people find it exciting to achieve consecutive streaks of the same result. Here's how likely various streak lengths are:</p>
+            <ul>
+                <li><strong>2 consecutive heads:</strong> 1 in 4 (25%)</li>
+                <li><strong>3 consecutive heads:</strong> 1 in 8 (12.5%)</li>
+                <li><strong>4 consecutive heads:</strong> 1 in 16 (6.25%)</li>
+                <li><strong>5 consecutive heads:</strong> 1 in 32 (3.125%)</li>
+                <li><strong>10 consecutive heads:</strong> 1 in 1,024 (0.098%)</li>
+            </ul>
+            <p>These odds apply equally to consecutive tails. The same probabilities apply to any sequence of heads and tails — for instance, the sequence HTHHT is just as likely as HHHHH.</p>
+
+            <h3>Independence of Events</h3>
+            <p>A crucial concept in probability is that each coin flip is completely independent of all previous flips. This means that if you've just flipped 5 heads in a row, your next flip still has a 50% chance of being heads and 50% chance of being tails. The coin has no "memory" of previous results. This misunderstanding is called the "Gambler's Fallacy" — the incorrect belief that past results influence future probabilities.</p>
+
+            <h3>Using Our Coin Flip App for Statistical Analysis</h3>
+            <p>Our app's streak tracking feature makes it perfect for testing these probability concepts yourself. Track your flips over time and watch as your results approach the theoretical 50/50 distribution. You might notice that longer streaks are rarer — this is probability in action! Some users enjoy using the app to gather flip data and analyze patterns, making it both entertaining and educational.</p>
+
+            <p>Whether you're settling a simple decision or exploring the mathematics of probability, our coin flip simulator provides a fair, random, and engaging way to flip a coin online.</p>
         </div>
     </section>
-    
+
     <script src="./app.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381238987477190"
             crossorigin="anonymous"></script>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
 </body>
 </html>
